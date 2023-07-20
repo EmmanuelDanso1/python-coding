@@ -1,4 +1,7 @@
+#!/usr/bin/python3
+output = ""
 for num in range(100):
-    print("{:02d}".format(num), end="")
+    output += ("{:02}".format(num))
     if num != 99:
-        print(", ", end="")
+        output += (", ")
+print(output + "")
